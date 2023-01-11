@@ -1,14 +1,17 @@
-body {
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 1.65;
-  word-break: break-word;
-  font-kerning: auto;
-  font-variant: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  hyphens: auto;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", monospace;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  box-sizing: border-box;
 }
