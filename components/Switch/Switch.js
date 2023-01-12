@@ -9,8 +9,7 @@ export default function SwitchComponent() {
   const { isDark, type } = useTheme();
   return (
     <Switch
-      color="error"
-      css={{ maxWidth: "$12rem" }}
+      color="secondary"
       checked={isDark}
       onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
       iconOn={<FaSun />}

@@ -4,6 +4,37 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar{
+  width: 3px;
+  background-color: rgba(0, 0, 0, 0.199);
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgba(137, 43, 226, 0.336);
+  border-radius: 25px;
+  width: 20%;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  opacity: 0.90;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+  opacity: 1;
+  background-color: blueviolet;
+}
+
+::-webkit-scrollbar-button{
+  color: white;
+}
+::-webkit-scrollbar-track{
+  color: white;
+}
 * {
   margin: 0;
   padding: 0;
