@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import NavbarContent from "Components/Router/Navbar";
+import { Text } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,12 +39,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <Text h2 className={inter.className}>
               Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
+            </Text>
+            <Text p className={inter.className}>
               Find in-depth information about Next.js features and&nbsp;API.
-            </p>
+            </Text>
           </a>
 
           <a
@@ -52,12 +53,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <Text h2 className={inter.className}>
               Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
+            </Text>
+            <Text p className={inter.className}>
               Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
+            </Text>
           </a>
 
           <a
@@ -66,12 +67,12 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <Text h2 className={inter.className}>
               Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
+            </Text>
+            <Text p className={inter.className}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
+            </Text>
           </a>
 
           <a
@@ -80,13 +81,13 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <Text h2 className={inter.className}>
               Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
+            </Text>
+            <Text p className={inter.className}>
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
-            </p>
+            </Text>
           </a>
         </div>
       </main>

@@ -17,8 +17,8 @@ export default function NavbarContent() {
   ];
 
   return (
-    <Layout style={{background:"none"}}>
-      <Navbar variant="sticky" disableBlur>
+    <Layout style={{ background: "none" }}>
+      <Navbar variant="sticky">
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
           css={{
