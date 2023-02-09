@@ -1,5 +1,14 @@
 import '@/styles/globals.css'
+import React from "react";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const AppComponent = ({ Component, PageProps }) => {
+  return (
+    <>
+      <div className="container">
+        <Component {...PageProps} />
+      </div>
+    </>
+  );
+};
+
+export default AppComponent;
