@@ -1,4 +1,5 @@
-import { Navbar, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
+import { Navbar, Text, Avatar, Dropdown } from "@nextui-org/react";
+import Link from "next/link";
 import { Layout } from "./Layout.js";
 import { AcmeLogo } from "./AcmeLogo.js";
 
@@ -14,6 +15,10 @@ export default function NavbarContent() {
     "Team Settings",
     "Help & Feedback",
     "Log Out",
+  ];
+  const navigationToPage = [
+    { name: "Home", href: "/", isActive: true, color: "" },
+    { name: "About", href: "/page/Dashboard", isActive: false, color: "white" },
   ];
 
   return (
@@ -33,12 +38,21 @@ export default function NavbarContent() {
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="xs">
-          <Navbar.Link href="#">Features</Navbar.Link>
-          <Navbar.Link isActive href="#">
-            Customers
-          </Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
-          <Navbar.Link href="#">Company</Navbar.Link>
+          {navigationToPage.map((item) => {
+            return (
+              <Navbar.Link
+                isActive={item.isActive}
+                color={"secondary"}
+                css={{
+                  color: "white",
+                }}
+              >
+                <Link href={item.href} style={{ color: item.color }}>
+                  {item.name}
+                </Link>
+              </Navbar.Link>
+            );
+          })}
         </Navbar.Content>
         <Navbar.Content
           css={{
